@@ -38,7 +38,6 @@ We converted book-derived content into **JSONL** chat rows (`messages`: user the
 | `data/sft_design_qa.jsonl` | Example SFT dataset (chat JSONL). |
 | `turn-data-into-question-answer-format.py` | Helper used when building Q&A JSONL from raw text. |
 | `evaluate_model.py` | Evaluation helpers. |
-| `runpod_*.py` | Optional remote GPU pipeline (RunPod). |
 
 ---
 
@@ -134,7 +133,6 @@ git init
 git add README.md .gitignore requirements.txt
 git add cpt_train.py extract_data_from_books.py generate.py main.py sft_on_design_qa.py
 git add evaluate_model.py turn-data-into-question-answer-format.py
-git add runpod_remote_train.py runpod_gpu_pipeline.py
 git add data/sft_design_qa.jsonl data/book_corpus_test.jsonl
 git commit -m "Initial commit: design Qwen3 LoRA CPT/SFT tooling"
 git branch -M main
