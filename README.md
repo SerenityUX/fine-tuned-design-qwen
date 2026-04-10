@@ -120,30 +120,4 @@ python main.py
 # Choose Chat → pick base or adapter
 ```
 
-Or use `generate.py` directly for scripted generation.
-
----
-
-## Publishing to GitHub
-
-If this directory is not yet a git repository:
-
-```bash
-git init
-git add README.md .gitignore requirements.txt
-git add cpt_train.py extract_data_from_books.py generate.py main.py sft_on_design_qa.py
-git add evaluate_model.py turn-data-into-question-answer-format.py
-git add data/sft_design_qa.jsonl data/book_corpus_test.jsonl
-git commit -m "Initial commit: design Qwen3 LoRA CPT/SFT tooling"
-git branch -M main
-git remote add origin git@github.com:SerenityUX/fine-tuned-design-qwen.git
-git push -u origin main
-```
-
-Add any other tracked files explicitly; avoid `git add .` so large or secret paths stay out. Keep `models/`, `venv/`, `.env`, and copyrighted PDFs out of the remote.
-
----
-
-## License
-
-Model weights are subject to **Qwen** and Hugging Face license terms. Book PDFs and derived long excerpts may be restricted; this repo is intended as **code and methodology** plus **small/processed datasets** you are allowed to share.
+Or use `generate.py` directly for scripted generation.go
