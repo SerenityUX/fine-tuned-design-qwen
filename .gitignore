@@ -1,0 +1,9 @@
+models/
+.env
+venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Optional: keep local PDFs out of git (uncomment if needed)
+# books-to-fine-tune/*.pdf
